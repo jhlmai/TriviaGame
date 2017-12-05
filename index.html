@@ -9,12 +9,13 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
         <script src="assets/javascript/app.js"></script>
-
+<link rel="stylesheet" href="assets/css/style.css">
 
         <title>JOHN MAI</title>
     </head>
     <body>
         
+
         <!--    What to include -->
         <!-- Timer with time remaining of ?? seconds -->
         <!-- Create 10 trivia questions that has header line -->
@@ -39,7 +40,7 @@
     <!-- questions and radio buttons -->
     <div class="person">
         <p id="question1">Q1: What year was he born in?</p>
-            <input type="radio" class="radio" name="q1" value="1" id="a" />
+            <input type="radio" class="radio" name="q1" value="true" id="a" />
             <label for="y">1984</label>
             <input type="radio" class="radio" name="q1" value="0" id="b" />
             <label for="z">1985</label>
@@ -54,7 +55,7 @@
             <label for="z">99</label>
             <input type="radio" class="radio" name="q2" value="0" id="c" />
             <label for="y">9</label>
-            <input type="radio" class="radio" name="q2" value="1" id="d" />
+            <input type="radio" class="radio" name="q2" value="true" id="d" />
             <label for="z">7</label>
             <p id="question3">Q3: What astrological sign is he?</p>
             <input type="radio" class="radio" name="q3" value="0" id="a" />
@@ -63,19 +64,19 @@
             <label for="z">Leo</label>
             <input type="radio" class="radio" name="q3" value="0" id="c" />
             <label for="y">Aquarius</label>
-            <input type="radio" class="radio" name="q3" value="1" id="d" />
+            <input type="radio" class="radio" name="q3" value="true" id="d" />
             <label for="z">Capricorn</label>
             <p id="question4">Q4: What part of San Diego does he live in?</p>
             <input type="radio" class="radio" name="q4" value="0" id="a" />
             <label for="y">Santee</label>
-            <input type="radio" class="radio" name="q4" value="1" id="b" />
+            <input type="radio" class="radio" name="q4" value="true" id="b" />
             <label for="z">Spring Valley</label>
             <input type="radio" class="radio" name="q4" value="0" id="c" />
             <label for="y">La Mesa</label>
             <input type="radio" class="radio" name="q4" value="0" id="d" />
             <label for="z">Lemon Grove</label>
             <p id="question5">Q5: What is his daughter's name?</p>
-            <input type="radio" class="radio" name="q5" value="1" id="a" />
+            <input type="radio" class="radio" name="q5" value="true" id="a" />
             <label for="y">Alexis</label>
             <input type="radio" class="radio" name="q5" value="0" id="b" />
             <label for="z">Addison</label>
@@ -84,7 +85,7 @@
             <input type="radio" class="radio" name="q5" value="0" id="d" />
             <label for="z">Ariel</label>
             <p id="question6">Q6: How many siblings does he have?</p>
-            <input type="radio" class="radio" name="q6" value="1" id="a" />
+            <input type="radio" class="radio" name="q6" value="true" id="a" />
             <label for="y">0</label>
             <input type="radio" class="radio" name="q6" value="0" id="b" />
             <label for="z">1</label>
@@ -99,19 +100,19 @@
             <label for="z">Red</label>
             <input type="radio" class="radio" name="q7" value="0" id="c" />
             <label for="y">Blue</label>
-            <input type="radio" class="radio" name="q7" value="1" id="d" />
+            <input type="radio" class="radio" name="q7" value="true" id="d" />
             <label for="z">Gold</label>
             <p id="question8">Q8: What is his wife's name?</p>
             <input type="radio" class="radio" name="q8" value="0" id="a" />
             <label for="y">Jennifer</label>
             <input type="radio" class="radio" name="q8" value="0" id="b" />
             <label for="z">Jessica</label>
-            <input type="radio" class="radio" name="q8" value="1" id="c" />
+            <input type="radio" class="radio" name="q8" value="true" id="c" />
             <label for="y">Kathy</label>
             <input type="radio" class="radio" name="q8" value="0" id="d" />
             <label for="z">Rachel</label>
             <p id="question9">Q9: What is his favorite TV show of all time?</p>
-            <input type="radio" class="radio" name="q9" value="1" id="a" />
+            <input type="radio" class="radio" name="q9" value="true" id="a" />
             <label for="y">Game of Thrones</label>
             <input type="radio" class="radio" name="q9" value="0" id="b" />
             <label for="z">Breaking Bad</label>
@@ -124,21 +125,14 @@
             <label for="y">Toyota Camry</label>
             <input type="radio" class="radio" name="q10" value="0" id="b" />
             <label for="z">Kia Sorento</label>
-            <input type="radio" class="radio" name="q10" value="1" id="c" />
+            <input type="radio" class="radio" name="q10" value="true" id="c" />
             <label for="y">Honda Odyssey</label>
             <input type="radio" class="radio" name="q10" value="0" id="d" />
             <label for="z">Toyota Tacoma</label>
-            
-
-
-
-
-
-
-
-
           </div>
 
+          <div id="timeUp"></div>
+          <div id="correctAnswers"></div>
 
 
     <script>
